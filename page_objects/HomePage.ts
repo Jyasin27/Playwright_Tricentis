@@ -4,10 +4,12 @@ import { AbstractPage } from "./AbstractPage";
 export class HomePage extends AbstractPage{
 
     readonly loginLink: Locator
+    readonly cartLink: Locator
 
     constructor(page: Page) {
         super(page)
         this.loginLink = page.locator(".ico-login")
+        this.cartLink = page.locator("#topcartlink")
     }
     
     async naviagateToSite()
@@ -18,6 +20,10 @@ export class HomePage extends AbstractPage{
     async navigateToLogin()
     {
         await this.loginLink.click()
+    }
+
+    async navigateToCartPage() {
+        await this.cartLink.click()
     }
 
 }
