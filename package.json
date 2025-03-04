@@ -1,0 +1,19 @@
+{
+  "name": "playwright_practice_tricentis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --config=playwright.config.ts --project=Chromium --reporter=list "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.50.1",
+    "playwright": "^1.50.1",
+    "prettier": "^3.5.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10"
+  }
+}
