@@ -13,7 +13,7 @@ test.describe('Tricentis Test', () => {
     test.beforeEach(async ({ page }) => {
         homePage = new HomePage(page)
         loginPage = new LoginPage(page, "fakemail@email.com")
-        productsPage = new ProductsPage(page, "Books")
+        productsPage = new ProductsPage(page)
 
         await homePage.naviagateToSite()
     })
